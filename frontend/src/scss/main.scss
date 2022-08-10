@@ -1,0 +1,14 @@
+// sass --watch assets/scss/main.scss assets/css/style.css
+@import "_resets.scss";
+@import "_mediaQueries.scss";
+@import "_base.scss";
+@import "_components.scss";
+
+// Components
+@import "../components/header/header.scss";
+@import "../components/checklistForm/checklistForm.scss";
+
+// Pages
+@import "../pages/dashboard/dashboard.scss";
+@import "../pages/detaillist/detaillist.scss";
+@import "../pages/addChecklist/addChecklist.scss";

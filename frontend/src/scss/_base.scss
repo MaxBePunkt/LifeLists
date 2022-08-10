@@ -1,0 +1,92 @@
+/*Fonts:*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap");
+:root {
+    // Colors
+    --clr-white: hsl(0, 0%, 100%);
+    --test:#fdc827;
+    --test:hsl(45, 98%, 57%);
+
+    --clr-blue-light: hsl(193, 43%, 71%);
+
+    --clr-blue-regular: hsl(198, 55%, 39%);
+
+    --clr-blue-medium: hsl(198, 85%, 23%);
+
+    --clr-blue-active: hsl(171, 85%, 23%);
+
+    --clr-blue-delete: hsla(12, 85%, 23%, 0.974);
+
+    --clr-blue-dark: hsl(198, 93%, 11%);
+
+    --clr-blue-black: hsl(198, 95%, 7%);
+    // Fonts
+    --ff-accent: "Montserrat", sans-serif;
+    --ff-regular: "Roboto Slab", serif;
+
+    // Sizes
+    // --fs-100: 0.6875rem; // 11px
+    --fs-100: clamp(0.6875rem, 4vw, 0.6875rem);
+    // --fs-200: 1rem; // 16px
+    --fs-200: clamp(0.6rem, 4vw, 1rem);
+    // --fs-300: 1.25rem; // 20px
+    --fs-300: clamp(1rem, 4vw, 1.25rem);
+    // --fs-400: 1.375rem; // 22px
+    --fs-400: clamp(1.1rem, 4vw, 1.375rem);
+    // --fs-500: 1.5rem; // 24px
+    --fs-500: clamp(1.2rem, 4vw, 1.5rem);
+    // --fs-600: 2.5rem; // 40px
+    --fs-600: clamp(1.5rem, 4vw, 2.5rem);
+    // --fs-700: 3.125rem; // 50px
+    --fs-700: clamp(1.875rem, 4vw, 3.125rem);
+    // --fs-800: 4.0625rem; // 65px
+    --fs-800: clamp(2.4375rem, 3vw, 4.0625rem);
+    // --fs-900: 5rem; // 80px
+    --fs-900: clamp(1.875rem, 4vw, 5rem);
+    // --fs-999: 9.375rem; // 150px
+    --fs-999: clamp(4rem, 10vw, 9.375rem);
+}
+
+html {
+    background-color: var(--clr-blue-dark);
+    color: var(--clr-white);
+    font-size: 100%;
+    font-family: var(--ff-regular);
+}
+.App {
+    overflow: clip;
+}
+
+.wrap {
+    width: min(100% - 5%, 1920px);
+    margin-inline: auto;
+    @include mq(lg) {
+    }
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}
+
+a {
+    font-family: var(--ff-regular);
+    color: inherit;
+    transition: all 0.2s;
+}
+
+p {
+    font-family: var(--ff-regular);
+    font-size: var(--fs-300);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: var(--ff-accent);
+}

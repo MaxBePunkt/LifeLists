@@ -1,0 +1,22 @@
+.dashboard {
+    margin: 2% 0 0 0;
+    &__grid {
+        display: grid;
+        margin: 5% 0 0 0;
+        gap: 20px;
+        place-items: center;
+        grid-template-columns: repeat(4, 1fr);
+        @include mq(xl) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+        @include mq(lg) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @include mq(md) {
+            grid-template-columns: repeat(1, 1fr);
+        }
+        &__card {
+            width: 100%;
+        }
+    }
+}

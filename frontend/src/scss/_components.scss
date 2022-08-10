@@ -1,0 +1,22 @@
+/* 
+##################################
+buttons / navbars / popups / ...
+##################################
+*/
+/* # # # # #  Button # # # # # */
+.btn--primary {
+    color: var(--clr-blue-medium);
+    background-color: var(--clr-blue-light);
+}
+/* # # # # #  Loading animation # # # # # */
+
+.loading-Div {
+    margin: 10% auto;
+    text-align: center;
+    .circle {
+        font-size: 10rem;
+        transform: scale(1);
+        transform-origin: center center;
+        animation: rotation 5s linear infinite;
+    }
+}
